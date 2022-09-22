@@ -1,0 +1,8 @@
+nav{
+  /*background color of choice goes here */
+}
+
+li{
+  /* set the display to inline here */
+  /* add ten pixels of padding here */
+}

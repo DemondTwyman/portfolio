@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width"=devce-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <!--opening ul tag goes here-->
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <!--In the anchor tags above type'Home' on line 13<a href='#'>Home</a> -->
+      <!--Same as above but 'About' on line 14-->
+      <!--Same as above but put'Contact' on line 15-->
+
+      <!--closing ul tag goes here-->
+</nav>
+
+</body>
+</html>
