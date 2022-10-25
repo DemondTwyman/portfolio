@@ -23,7 +23,7 @@ function getRandomPick() {
   } else if ( computerPick ==PAPER && playerPick ==SCISSORS){
     return WIN;
   }
-  if (computerPick == ROCK && playerPick == SCISSORS)
+  if (computerPick == ROCK && playerPick == SCISSORS){
   return LOSE;
 } else if (computerPick == ROCK && playerPick == PAPER) {
   return WIN;
