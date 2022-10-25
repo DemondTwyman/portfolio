@@ -68,6 +68,6 @@ function playGame (yourPick) {
      scissorsRight.classList.add("selected");
      break;
   }
-  let result = document.getElementById("results");
+  let result = document.getElementById("result");
   result.innerHTML = getResultText(myPick, yourPick);
 }
