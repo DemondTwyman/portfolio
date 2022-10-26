@@ -71,3 +71,45 @@ function playGame (yourPick) {
   let result = document.getElementById("result");
   result.innerHTML = getResultText(myPick, yourPick);
 }
+function setUp() {
+  let game = document.getElementById("game");
+  game.onanimationend = function() {
+this.classlist.remove("animate");
+}
+let closers = document.querySelectorAll(".closer");
+for (let i = 0; i < closers.length; i++) {
+  let closer = closers [i];
+  closer.onclick = function() {
+    var popupContainer =document.getElementById("popupContainer");
+    popupContainer.classlist.remove("popped");
+    resetGame();
+  };
+}
+}
+function resetGame() {
+  let rockleft = document.getElementId("rockLeft");
+  let paperLeft = document.getElementById("paperLeft");
+  let scissorsLeft = document.getElementById("scissorsLeft");
+  let rockRight = document.getElementById("rockRight");
+  let paperRight = document.getElementById("paperRight");
+  let scissorsRight = document.getElementById("scissorsRight");
+  let yourPickText = document.getElementById("yourPickText");
+  let myPickText = document.getElementById("myPickText");
+  yourPickText.innerHTML ="";
+  myPickText.innerHTML ="";
+  rockLeft.classList.remove("selected");
+  paperLeft.classList.remove("selected");
+  scissorsLeft.classList.remove("selected");
+  rockRight.classlist.remove("selected");
+  paperRight.classlist.remove("selected");
+  scissorsRight.classlist.remove("selected");
+  let result = document.getElementById("result");
+  result.innerHTML = "";
+}
+function popAndPlay(yourPick) {
+  let popupContainer = document.getElementById("popupContainer");
+  let game = document.getElementById("game");
+  popupContainer.classlist.add("popped");
+  game.classlist.add("animate");
+  playGame(yourPick);
+}
